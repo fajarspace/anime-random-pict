@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-function WaifuDisplay() {
+function HappyDisplay() {
   const [imageURL, setImageURL] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [isError, setIsError] = useState(false);
@@ -8,7 +8,7 @@ function WaifuDisplay() {
   const fetchData = async () => {
     try {
       setIsLoading(true);
-      const res = await fetch("https://api.waifu.pics/sfw/waifu", {
+      const res = await fetch("https://api.waifu.pics/sfw/happy", {
         method: "GET",
       });
 
@@ -72,4 +72,4 @@ function WaifuDisplay() {
   );
 }
 
-export default WaifuDisplay;
+export default HappyDisplay;

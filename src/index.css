@@ -11,6 +11,10 @@ html a {
   text-decoration: none;
 }
 
+.nav-a a {
+  text-decoration: underline;
+}
+
 body {
   background: #181e25;
   width: 100%;
