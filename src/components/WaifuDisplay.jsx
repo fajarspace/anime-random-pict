@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import Layout from "../layout/Layout";
 
 function WaifuDisplay() {
   const [imageURL, setImageURL] = useState("");
@@ -32,42 +33,41 @@ function WaifuDisplay() {
 
   return (
     <>
-      <section>
-        {isLoading ? (
-          <p>Loading...</p>
-        ) : (
-          <>
-            {isError ? (
-              <p>An error occurred while fetching waifu.</p>
-            ) : (
-              <>
-                {imageURL && (
-                  <div>
-                    <img width="100%" src={imageURL} alt="Generated Waifu" />
-                    <p>
-                      <a
-                        href={imageURL}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        View Full Image
-                      </a>
-                    </p>
-                    <p>
-                      <a href="#" onClick={fetchData}>
-                        Refresh
-                      </a>
-                    </p>
-                  </div>
-                )}
-              </>
-            )}
-          </>
-        )}
-      </section>
-      {/* <footer>
-        <a href="">asd</a>
-      </footer> */}
+      <Layout>
+        <section>
+          {isLoading ? (
+            <p>Loading...</p>
+          ) : (
+            <>
+              {isError ? (
+                <p>An error occurred while fetching waifu.</p>
+              ) : (
+                <>
+                  {imageURL && (
+                    <div>
+                      <img width="100%" src={imageURL} alt="Generated Waifu" />
+                      <p>
+                        <a
+                          href={imageURL}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          View Full Image
+                        </a>
+                      </p>
+                      <p>
+                        <a href="#" onClick={fetchData}>
+                          Refresh
+                        </a>
+                      </p>
+                    </div>
+                  )}
+                </>
+              )}
+            </>
+          )}
+        </section>
+      </Layout>
     </>
   );
 }

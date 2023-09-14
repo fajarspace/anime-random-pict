@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Layout from "../layout/Layout";
 
-function HappyDisplay() {
+function NekoDisplay() {
   const [imageURL, setImageURL] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [isError, setIsError] = useState(false);
@@ -9,7 +9,7 @@ function HappyDisplay() {
   const fetchData = async () => {
     try {
       setIsLoading(true);
-      const res = await fetch("https://api.waifu.pics/sfw/happy", {
+      const res = await fetch("https://api.waifu.pics/sfw/neko", {
         method: "GET",
       });
 
@@ -72,4 +72,4 @@ function HappyDisplay() {
   );
 }
 
-export default HappyDisplay;
+export default NekoDisplay;

@@ -7,7 +7,9 @@ const Nav = () => {
       <div className="nav-a">
         <span>Categories:</span>
         <br />
-        <a href="">Waifu</a> / <a href="">Happy</a>
+        <a href="/waifu">Waifu</a> / <a href="/happy">Happy</a> /{" "}
+        <a href="/cringe">Cringe</a> / <a href="/smile">Smile</a> /{" "}
+        <a href="/cry">Cry</a> / <a href="/neko">Neko</a>
       </div>
     </section>
   );
