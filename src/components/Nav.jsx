@@ -4,7 +4,9 @@ import { Link } from "react-router-dom";
 const Nav = () => {
   return (
     <section style={{ marginBottom: "15px" }}>
-      <h1>Anime's random pict 😋</h1>
+      <h1>
+        <a href="/">Anime's random pict 😋</a>
+      </h1>
       <div className="nav-a">
         <span>Categories:</span>
         <br />

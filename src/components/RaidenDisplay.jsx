@@ -4,7 +4,6 @@ import Layout from "../layout/Layout";
 function RaidenDisplay() {
   const [imageURL, setImageURL] = useState("");
   const [imageType, setImageType] = useState("");
-  const [showGIFs, setShowGIFs] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const [isError, setIsError] = useState(false);
 
@@ -39,17 +38,6 @@ function RaidenDisplay() {
   useEffect(() => {
     fetchData();
   }, [imageType]);
-
-  const includeGIFs = () => {
-    setShowGIFs(true);
-    fetchData();
-  };
-
-  const excludeGIFs = () => {
-    setShowGIFs(false); // Perbaikan disini
-    fetchData();
-  };
-
   return (
     <>
       <Layout>
