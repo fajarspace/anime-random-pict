@@ -123,13 +123,13 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* position: fixed; */
+  position: fixed;
   bottom: 0px;
   left: 0px;
   transform: translate(-50%);
   margin-left: 50%;
   /* margin-top: 30px; */
-  padding: 12px 19%;
+  padding: 12px 5%;
   background: #2a343e;
   width: 100%;
   max-width: 400px;
