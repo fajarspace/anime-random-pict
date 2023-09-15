@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Nav = () => {
   return (
@@ -7,9 +8,17 @@ const Nav = () => {
       <div className="nav-a">
         <span>Categories:</span>
         <br />
-        <a href="/waifu">Waifu</a> / <a href="/happy">Happy</a> /{" "}
-        <a href="/cringe">Cringe</a> / <a href="/smile">Smile</a> /{" "}
-        <a href="/cry">Cry</a> / <a href="/neko">Neko</a>
+        <Link to={"/waifu"}>Waifu</Link> / <Link to={"/happy"}>Happy</Link> /{" "}
+        <Link to={"/cringe"}>Cringe</Link> / <Link to={"/smile"}>Smile</Link> /{" "}
+        <Link to={"/cry"}>Cry</Link> / <Link to={"/neko"}>Neko</Link>
+      </div>
+      <br />
+      <div className="nav-a">
+        <span>Special character:</span>
+        <br />
+        <Link to={"/megumin"}>Megumin</Link> /{" "}
+        <Link to={"/raiden-shogun"}>Raiden shogun</Link> /{" "}
+        <Link to={"/marin"}>Marin kitagawa</Link>
       </div>
     </section>
   );

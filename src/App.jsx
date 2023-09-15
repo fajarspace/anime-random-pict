@@ -7,6 +7,9 @@ import CringeDisplay from "./components/CringeDisplay";
 import SmileDisplay from "./components/SmileDisplay";
 import CryDisplay from "./components/CryDisplay";
 import NekoDisplay from "./components/NekoDisplay";
+import RaidenDisplay from "./components/RaidenDisplay";
+import MarinDisplay from "./components/MarinDisplay";
+import MeguminDisplay from "./components/MeguminDisplay";
 // import Home from "./pages/Home";
 // import Nav from "./components/Nav";
 // import Footer from "./components/Footer";
@@ -22,6 +25,10 @@ const App = () => {
         <Route path="/smile" element={<SmileDisplay />} />
         <Route path="/cry" element={<CryDisplay />} />
         <Route path="/neko" element={<NekoDisplay />} />
+        // special char
+        <Route path="/raiden-shogun" element={<RaidenDisplay />} />
+        <Route path="/marin" element={<MarinDisplay />} />
+        <Route path="/megumin" element={<MeguminDisplay />} />
       </Routes>
     </BrowserRouter>
   );
